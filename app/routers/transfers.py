@@ -95,6 +95,9 @@ def make_transfer(req: TransferRequest, db: Session = Depends(get_db), current_u
                 reference_id=ref,
             )
             db.add(txn)
+            db.commit()               
+            db.refresh(sender)        
+            db.refresh(receiver)
     except Exception as e:
             raise HTTPException(status_code=500, detail=f"Transfer failed: {str(e)}")
 

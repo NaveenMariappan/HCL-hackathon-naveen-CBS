@@ -1,4 +1,3 @@
-# frontend/admin.py
 import streamlit as st
 from utils import require_auth
 import api
