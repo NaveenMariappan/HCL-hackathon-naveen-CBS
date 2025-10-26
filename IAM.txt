@@ -1,0 +1,7 @@
+Customer
+- Register and manage accounts
+- Performs transactions
+- Applies for loan
+- View statement and loan status
+Admin 
+-overall access
