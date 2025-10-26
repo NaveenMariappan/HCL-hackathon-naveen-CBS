@@ -16,4 +16,4 @@ For Admin Access till Loan approval, manage acc, trans log
 
 For Auditor Access till Audit log 
 
-unit test with 50 cases each role
+unit test with 10 cases each role
