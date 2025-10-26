@@ -5,3 +5,6 @@ Customer
 - View statement and loan status
 Admin 
 -overall access
+Auditor
+- logs
+- activity
