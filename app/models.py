@@ -45,3 +45,16 @@ class Account(Base):
     balance = Column(Integer, default=0)  # initial balance 0
     status = Column(String, default="active")  # active, frozen, closed
 
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
+from datetime import datetime
+
+class Transaction(Base):
+    __tablename__ = "transactions"
+
+    id = Column(Integer, primary_key=True, index=True)
+    sender_account = Column(String, nullable=False)
+    receiver_account = Column(String, nullable=False)
+    amount = Column(Integer, nullable=False)
+    status = Column(String, default="success")  # success, failed
+    timestamp = Column(DateTime, default=datetime.utcnow)
+    reference_id = Column(String, unique=True, index=True)
