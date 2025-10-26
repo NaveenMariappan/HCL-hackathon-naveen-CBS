@@ -1,0 +1,19 @@
+Run CMD in trml
+for backend : uvicorn app.main:app --reload
+for Frontend : cd frontend
+pip install -r requirements-frontend.txt
+streamlit run app.py
+
+Sample Data 
+Customer
+kabil@one.com
+Kabil@123
+
+naveen@test.com
+Test@123
+
+Admin
+admin@bank.com
+Admin123
+
+
